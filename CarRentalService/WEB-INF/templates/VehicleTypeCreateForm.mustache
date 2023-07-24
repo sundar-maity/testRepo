@@ -1,0 +1,28 @@
+<div class="row">
+<div class="col-md-6 col-md-offset-3">
+<div class="page-header">
+	<h1>Define a new vehicle type</h1>
+</div>
+
+<div>{{{alerts}}}</div>
+<form role="form" method="POST" action={{base_url}}/vehicletype/create>
+
+  <div class="form-group">
+    <label for="typeName">Name</label>
+    <input type="text" class="form-control" id="typeName" name="typeName" placeholder="Enter type name">
+  </div>
+  
+  <div class="form-group">
+    <label for="typeDailyRate">Daily rate</label>
+    <input type="number" class="form-control" id="typeDailyRate" name="typeDailyRate" step="0.01" placeholder="10.00">
+  </div>
+  
+  <div class="form-group">
+    <label for="typeHourlyRate">Hourly rate</label>
+    <input type="number" class="form-control" id="typeHourlyRate" name="typeHourlyRate" step="0.01" placeholder="10.00">
+  </div>
+
+  <button type="submit" class="btn btn-primary pull-right">Create</button>
+</form>
+</div>
+</div>

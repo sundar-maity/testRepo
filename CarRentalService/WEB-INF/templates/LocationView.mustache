@@ -1,0 +1,64 @@
+<div class="row">
+	<div class="col-md-12">
+		<div class="page-header">
+			<h1>Location details</h1>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<ul class="nav nav-pills">
+		  <li><a href="{{base_url}}/locations"><span class="glyphicon glyphicon-chevron-left"></span>&nbsp;View other locations</a></li>
+		  <li class="active"><a href="#"><span class="glyphicon glyphicon-th-list"></span>&nbsp;View details</a></li>
+		  <li><a href="{{base_url}}/vehicles"><span class="glyphicon glyphicon-list"></span>&nbsp;View all vehicles</a></li>
+		  {{{extra_options}}}
+		</ul>
+	</div>
+</div>
+<div class="row pad-top-10">
+	<div class="col-md-4">
+		<!-- Location description -->
+		<div class="panel panel-default">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Details:</h3>
+		  </div>
+		  <div class="panel-body">
+		  	<p>Currently available information on this rental location:</p>
+		    <table class="table">
+		    	<tbody>
+		    		<tr>
+		    			<td><b>Street address: </b></td>
+		    			<td>{{street_address}}</td>
+		    		</tr>
+		    		<tr>
+						<td><b>City: </b></td>
+						<td>{{city}}</td>
+					</tr>
+		    		<tr>
+						<td><b>Zipcode: </b></td>
+						<td>{{zipcode}}</td>
+					</tr>
+		    		<tr>
+						<td><b>State: </b></td>
+						<td>{{state}}</td>
+					</tr>
+		    		<tr>
+						<td><b>Country: </b></td>
+						<td>{{country}}</td>
+					</tr>
+		    		<tr>
+						<td><b>Capacity: </b></td>
+						<td>{{capacity}}</td>
+		    		</tr>
+		    	</tbody>
+		    </table>
+		  </div>
+		</div>	
+	</div>
+	<div class="col-md-8">
+		<h4>Vehicles at this location:</h4>
+		<div class="row">
+			{{{vehicles}}}
+		</div>
+	</div>
+</div>

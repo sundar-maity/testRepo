@@ -1,0 +1,39 @@
+<div class="row">
+	<div class="col-md-12">
+		{{{message}}}
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<div class="page-header">
+			<h1>Location filter results</h1>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<ul class="nav nav-pills">
+		  <li><a href="{{base_url}}/locations"><span class="glyphicon glyphicon-chevron-left"></span>&nbsp;Go back to all locations</a></li>
+		  <li class="active"><a href="#">Filtered List&nbsp;<span class="glyphicon glyphicon-filter"></span></a></li>
+		  {{{extra_options}}}
+		</ul>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<table class="table pad-top-10">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>City</th>
+					<th>State</th>
+					<th>Capacity</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{{locations}}}
+			</tbody>
+		</table>
+	</div>
+</div>

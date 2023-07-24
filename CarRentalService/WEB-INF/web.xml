@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+  version="2.5">
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>CarRentalServlet</display-name>
+  	<servlet-name>CarRentalServlet</servlet-name>
+  	<servlet-class>edu.uga.csci4050.group3.core.CarRentalServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>CarRentalServlet</servlet-name>  	
+  	<url-pattern>/CarRentalServlet</url-pattern>
+  	<url-pattern>/home</url-pattern>  	
+  	<url-pattern>/users</url-pattern>
+  	<url-pattern>/user/register</url-pattern>
+  	<url-pattern>/user/login</url-pattern>
+  	<url-pattern>/user/logout</url-pattern>
+  	<url-pattern>/user/home</url-pattern>
+  	<url-pattern>/user/account</url-pattern>
+  	<url-pattern>/user/updaterole</url-pattern>
+  	<url-pattern>/user/delete</url-pattern>
+  	
+  	<url-pattern>/membership</url-pattern>
+  	<url-pattern>/membership/purchase</url-pattern>
+  	<url-pattern>/membership/cancel</url-pattern>
+  	
+  	<url-pattern>/vehicles</url-pattern>
+  	<url-pattern>/vehicle/*</url-pattern>
+  	<url-pattern>/vehicle/create</url-pattern>
+  	<url-pattern>/vehicle/delete/*</url-pattern>
+  	<url-pattern>/vehicle/update/*</url-pattern>
+  	
+  	<url-pattern>/vehicletypes</url-pattern>
+  	<url-pattern>/vehicletype/*</url-pattern>
+  	<url-pattern>/vehicletype/create</url-pattern>
+  	<url-pattern>/vehicletype/delete/*</url-pattern>
+  	<url-pattern>/vehicletype/update/*</url-pattern>
+  	
+  	<url-pattern>/locations</url-pattern>
+  	<url-pattern>/locations/filter</url-pattern>
+  	<url-pattern>/location</url-pattern>
+  	<url-pattern>/location/create</url-pattern>
+  	<url-pattern>/location/delete/*</url-pattern>
+  	<url-pattern>/location/update/*</url-pattern>
+  	
+  	<url-pattern>/rent</url-pattern>
+  	<url-pattern>/rentals</url-pattern>
+  	<url-pattern>/rental/confirm</url-pattern>
+  	<url-pattern>/rental/cancel</url-pattern>
+  	
+  	<url-pattern>/reservations</url-pattern>
+  	<url-pattern>/reservation/cancel</url-pattern>
+  	<url-pattern>/reservation/return</url-pattern>
+  	
+  	<url-pattern>/payments</url-pattern>
+  	
+  	<url-pattern>/service</url-pattern>
+  	
+  	<url-pattern>/database/setup</url-pattern>
+  	<url-pattern>/database/destroy</url-pattern>
+  </servlet-mapping>
+
+</web-app>
